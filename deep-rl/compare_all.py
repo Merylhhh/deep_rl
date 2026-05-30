@@ -111,7 +111,7 @@ if __name__ == "__main__":
     path = "results/plots/comparison.png"
     plt.savefig(path, dpi=150)
     plt.close()
-    print(f"\n  📊 Comparaison sauvegardée → {path}")
+    print(f"\n   Comparaison sauvegardée → {path}")
 
     # Résumé
     print("\n" + "=" * 45)
