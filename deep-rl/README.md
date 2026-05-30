@@ -255,7 +255,7 @@ CartPole-v1 est considéré **résolu** lorsque la moyenne des récompenses sur 
 
 ---
 
-## 🔧 Hyperparamètres
+##  Hyperparamètres
 
 ### DQN
 | Paramètre | Valeur | Rôle |
