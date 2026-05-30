@@ -51,7 +51,7 @@ def train(n_episodes=800, max_steps=500, render_last=True):
 
         if avg >= 475 and solved_episode is None:
             solved_episode = ep
-            print(f"\n  ✅ Résolu à l'épisode {ep} !\n")
+            print(f"\n   Résolu à l'épisode {ep} !\n")
 
     env.close()
 
@@ -84,7 +84,7 @@ def _plot(rewards, avgs, solved_ep, algo="PolicyGradient"):
     path = f"../results/plots/{algo.lower()}_learning_curve.png"
     plt.savefig(path, dpi=150)
     plt.close()
-    print(f"  📊 Courbe sauvegardée → {path}")
+    print(f"   Courbe sauvegardée → {path}")
 
 
 def _record_gif(agent, filename="../results/gifs/pg_cartpole.gif", n_steps=300):
@@ -103,9 +103,9 @@ def _record_gif(agent, filename="../results/gifs/pg_cartpole.gif", n_steps=300):
 
         env.close()
         imageio.mimsave(filename, frames, fps=30)
-        print(f"  🎬 GIF sauvegardé → {filename}")
+        print(f"   GIF sauvegardé → {filename}")
     except ImportError:
-        print("  ⚠️  imageio non installé — GIF ignoré")
+        print("    imageio non installé — GIF ignoré")
 
 
 if __name__ == "__main__":
